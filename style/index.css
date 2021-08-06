@@ -1,0 +1,441 @@
+a {
+   color: white;
+}
+
+a:hover {
+   color: #04749c;
+}
+
+body {
+   font-family: "Berkslund";
+}
+
+header{
+   position: sticky;
+   top: 0px;
+   z-index: 5;
+   background-color: #182634;
+   padding-bottom: 5px;
+   box-shadow: #131e29 0px 5px 15px;
+}
+
+nav a {
+   text-decoration: none;
+   color: white;
+   font-size: 18px;
+}
+
+.apply-btn:hover{
+   color: white;
+}
+.apply-btn {
+   background: #1e5799;
+   background: linear-gradient(to right, #1e5799 0%, #ba239b 0%, #7db9e8 100%);
+   padding: 6px 20px;
+   border-radius: 15px;
+}
+
+a.active{
+   color: #8c9192;
+}
+
+.menu-text{
+   font-size: 20px;
+   color: white;
+}
+.menu-text:hover{
+   color: #04749c;
+}
+
+.circles div:nth-child(2){
+   margin: 0 5px;
+}
+.circles div{
+   height: 10px;
+   width: 10px;
+   border-radius: 50%;
+   background-color: #04749c;
+}
+
+#accordionExample a:hover{
+   color: #04749c;
+}
+#accordionExample1 a{
+   color: #04749c;
+   margin: 0 2px;
+   font-weight: bold;
+}
+
+#accordionExample1 div div a{
+   border-bottom: 1px solid #8c9192;
+}
+
+
+.accordion-button::after{
+   display: none;
+}
+
+#headingOne .accordion-button::after{
+   display: flex;
+}
+
+
+#carouselExampleIndicators{
+   height: 600px;
+   background: #182634 url(../images/koxpeq.png) no-repeat;
+   background-position: right bottom;
+   background-size: contain;
+}
+
+.under-purple{
+   color: #109be2;
+   font-size: 20px;
+}
+.purple{
+   color: #ed1c83;
+   font-size: 46px;
+   font-weight: 900;
+}
+
+#carouselExampleIndicators div button{
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+}
+
+#about{
+   background-color: red;
+
+   color: transparent;
+   /* Create the gradient. */
+   background-image: linear-gradient(90deg,rgb(170, 0, 255), rgb(0, 132, 255));
+   
+   background-size: 100%;
+   background-repeat: repeat;
+ 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+}
+
+.slider{
+   background: url(../images/slider1.png) no-repeat;
+   background-position-y: -545px;
+   height: 200px;
+}
+
+.about a{
+   color: black;
+   text-decoration: none;
+   position: relative;
+}
+
+.about{
+   background-color: #ebf1f6;
+   background: linear-gradient(white,#ebf1f6,#ebf1f6);
+}
+
+.about p{
+   margin: 0;
+}
+
+.logos:nth-child(1) p{
+   margin-top: 26px;
+}
+.logos:nth-child(2) p{
+   margin-top: 30px;
+}
+.logos:nth-child(3) p{
+   margin-top: 1px;
+}
+.logos:nth-child(4) p{
+   margin-top: 34px;
+}
+
+@media screen and (max-width:991px) {
+   header{
+      top: -70px;
+   }
+}
+
+#news{
+   font-size: 50px;
+   background-color: red;
+
+   color: transparent;
+   /* Create the gradient. */
+   background-image: linear-gradient(90deg,rgb(170, 0, 255), rgb(0, 132, 255));
+   
+   background-size: 100%;
+   background-repeat: repeat;
+ 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+
+}
+
+.news img{
+   width: 100%;
+}
+
+.news * a{
+   color: black;
+   text-decoration: none;
+}
+
+section.news > div > div:nth-child(3) > div > a{
+   color: white;
+}
+
+.contacts{
+   background-color: #2c3d4d;
+}
+
+.contacts * *{
+   color: white;
+}
+
+.contacts * a{
+   text-decoration: none;
+}
+
+.contacts a svg{
+   height: 30px;
+}
+
+.contacts a svg path{
+   color: #2c3d4d; 
+}
+
+.svg{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color: white;
+}
+
+.svg:hover path{
+   color: #00adef;
+}
+
+footer{
+   background-color: #182634;
+   color: white;
+   font-family: sans-serif;
+}
+
+footer > div > div > div:first-child{
+   width: min-content;
+}
+footer > div > div > div:last-child{
+   border-left: 1px dashed ;
+}
+
+@media (max-width: 767px) {
+   .carusel .carousel-inner .carousel-item > div {
+       display: none;
+   }
+   .carusel .carousel-inner .carousel-item > div:first-child {
+       display: block;
+   }
+}
+
+.carusel .carousel-inner .carousel-item.active,
+.carusel .carousel-inner .carousel-item-next,
+.carusel .carousel-inner .carousel-item-prev {
+   display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+   
+   .carusel .carousel-inner .carousel-item-end.active,
+   .carousel-inner .carousel-item-next {
+     transform: translateX(25%);
+   }
+   
+   .carusel .carousel-inner .carousel-item-start.active, 
+   .carusel .carousel-inner .carousel-item-prev {
+     transform: translateX(-25%);
+   }
+}
+
+.carusel .carousel-inner .carousel-item-end,
+.carusel .carousel-inner .carousel-item-start { 
+ transform: translateX(0);
+}
+
+.carusel{
+   background-color: #ebf1f6;
+}
+
+.carusel *{
+   border: none;
+}
+
+.carusel .card-img{
+   background-color: #ebf1f6;
+}
+
+.carusel #recipeCarousel{
+   position: relative;
+}
+
+.carusel a.carousel-control-prev span{
+   color: #00516e;
+   background: none;
+}
+
+.carusel a.carousel-control-next span{
+   background: none;
+   color: #00516e;
+   transform: rotate(180deg);
+}
+
+.carusel a.carousel-control-prev span svg,.carusel a.carousel-control-next span svg{
+   font-size: 40px;  
+}
+
+.partners .carousel-inner .carousel-item.active,
+.partners .carousel-inner .carousel-item-next,
+.partners .carousel-inner .carousel-item-prev {
+   display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+   
+   .partners .carousel-inner .carousel-item-end.active,
+   .partners .carousel-inner .carousel-item-next {
+     transform: translateX(25%);
+   }
+   
+   .partners .carousel-inner .carousel-item-start.active, 
+   .partners .carousel-inner .carousel-item-prev {
+     transform: translateX(-25%);
+   }
+}
+
+.partners .carousel-inner .carousel-item-end,
+.partners .carousel-inner .carousel-item-start { 
+ transform: translateX(0);
+}
+
+.partners {
+}
+
+.partners *{
+   border: none;
+}
+
+.partners .card-img{
+}
+
+.partners #recipeCarousel{
+   position: relative;
+}
+
+.partners a.carousel-control-prev span{
+   color: #00516e;
+   background: none;
+}
+
+.partners a.carousel-control-next span{
+   background: none;
+   color: #00516e;
+   transform: rotate(180deg);
+}
+
+.partners a.carousel-control-prev span svg,.partners a.carousel-control-next span svg{
+   font-size: 40px;  
+}
+
+.parent{
+   position: relative;
+}
+
+.red-layer{
+   background: rgba(255, 0, 0, 0.5);
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   border-radius: 50%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   opacity: 0;
+   
+   }
+
+.red-layer svg{
+   height: 45px;
+   color: white;
+}
+
+.carusel .card-img-overlay{
+   cursor: pointer;
+}
+
+/*2*/
+
+.challenges{
+   background: #edf4ff;
+}
+
+.benefits{
+   background: #cfe0ff;
+}
+
+.process-content{
+   background-color: #ebf1f6;
+   height: 150px;
+   border-radius: 10px;
+}
+
+.presentation{
+   background: linear-gradient(90deg, white,#b5ddf2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Berkslund';
+    src: local('Berkslund Thin'), local('Berkslund-Thin'),
+        url('Berkslund-Thin.woff2') format('woff2'),
+        url('Berkslund-Thin.woff') format('woff'),
+        url('Berkslund-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
